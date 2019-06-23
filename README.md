@@ -18,6 +18,7 @@ This website is focused on providing a single page application for a user to vis
     - express
     - express-handlebars
     - mongoose
+    - morgan
 
 - Then run `nodemon server.js` and visit `localhost:3000` in your browser
 - Next you will visit `localhost:3000/scrape`
