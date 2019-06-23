@@ -18,3 +18,8 @@ This website is focused on providing a single page application for a user to vis
     - express
     - express-handlebars
     - mongoose
+
+- Then run `nodemon server.js` and visit `localhost:3000` in your browser
+- Next you will visit `localhost:3000/scrape`
+- Once scrape is complete you will go back to `localhost:3000` to view the scraped articles
+- If you visit `localhost:3000/articles` you will see json pretty printed of scraped articles
