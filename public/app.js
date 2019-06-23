@@ -3,7 +3,7 @@ $.getJSON("/articles", function(data) {
   // For each one
   for (var i = 0; i < data.length; i++) {
     // Display the apropos information on the page
-    $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "</p>");
+    $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].summary + "<br />" + data[i].link + "</p>");
   }
 });
 
@@ -54,6 +54,8 @@ $(document).on("click", "#savenote", function() {
     data: {
       // Value taken from title input
       title: $("#titleinput").val(),
+      //summary
+      summary: $("#summaryinput").val(),
       // Value taken from note textarea
       body: $("#bodyinput").val()
     }
@@ -68,5 +70,6 @@ $(document).on("click", "#savenote", function() {
 
   // Also, remove the values entered in the input and textarea for note entry
   $("#titleinput").val("");
+  $("#summaryinput").val("");
   $("#bodyinput").val("");
 });
